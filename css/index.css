@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}
+li{
+    list-style-type:none;
+}
+body {
+    font: 500 15px "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    line-height:1.8;
+    letter-spacing:1px;
+    background: #F7F8FA;
+    color:#555;
+    width:80em;
+    margin:auto;
+}
+/*标题*/
+body >header> h1{
+    display:none;
+}
+/*导航栏*/
+ nav ul {
+    background: #187DC1 ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    white-space: nowrap; /* 避免文字換行 */
+}
+ul li {
+    position: relative; /* 使子選單依照母選單的座標顯示 */
+    width:7em;
+    text-align:center;
+}
+/* 設定母選單的連結樣式 */
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    background: url(../images/down1-white.png) bottom center no-repeat;
+    background-size:8px 8px;
+}
+/* 當母選單下沒有子選單時，也就是說只有一個連結時，隱藏detail.png */
+ul li a:only-child {
+    background: none;
+}
+nav ul li:hover {
+    background: #2FA3D4;
+}
+ul li:hover > a {
+    color: #fff;
+}
+ul li:hover > ul {
+    display: block; /* 滑鼠滑入母選單後，顯示子選單 */
+}
+nav > ul > li {
+    display: inline-block; /* 使一級選單排成一橫列 */
+}
+/* 二級選單顯示於一級選單的正下方 */
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    list-style: none;
+    background: #187DC1;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 2;
+}
+/* 三級選單則顯示於二級選單的右方 */
+ul ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+
+/*学院新闻*/
+content{
+    width:80em;
+    height:44.3em;
+    /*background: rgba(139,255,123,0.64);*/
+}
+content article{
+    background: #fff;
+    border: 1px solid #ccc;
+}
+content article header{
+    background:#187DC1  ;
+    color:#fff;
+    font-size: 12px;
+    margin:20px 0px 20px 0px;
+    padding:10px 0px 10px 40px ;
+}
+content article aside p{
+    display:inline-block;
+    padding:0px 20px 0px 20px;
+    overflow:auto;
+    text-indent:2.2em;
+    text-align:justify;
+    /*overflow:hidden;*/
+    /*text-overflow:ellipsis;<nobr>&#8226; 显示不完显示省略号，测试内容</nobr>*/
+    /*box-sizing:border-box;*/
+}
+content #news{
+    width: 59em;
+    height: 22em;
+    /*background:#0000ff;*/
+}
+content #news header{
+    width: 70em;
+    background:#187DC1  15px 47% url("../images/news1.png") no-repeat ;
+    background-size:20px 20px;
+}
+content #news aside img {
+    width:320px;
+    height:220px;
+    box-sizing:border-box;
+    padding:20px;
+    /*background:#00f;*/
+}
+content #news aside p{
+    width:518px;
+    height:220px;
+    /*background:#fff;*/
+    /*color:#00f;*/
+}
+content #intro{
+    width:311px;
+    height: 22em;
+
+}
+content #intro header{
+    background:#187DC1  url("../images/intro.png") no-repeat 15px 47%;
+    background-size:20px 20px;
+    width: 22em;
+}
+content #intro aside p{
+     width:268px;
+     height:220px;
+     /*background:#fff;*/
+     /*color:#00f;*/
+}
+content ul li{
+    width:100%;
+    height:36px;
+    color:#333;
+    /*background:rgba(255,201,135,0.64);*/
+    padding-left:0px;
+    line-height:2;
+    font-size:16px;
+    letter-spacing:2px;
+}
+content ul li:hover{
+    background:#3399CC;
+    opacity:0.8;
+}
+content ul li p:nth-child(1) {
+    letter-spacing:1px;
+    text-indent:0;
+    padding:0px;
+    margin:0px;
+    width:250px;
+    display:inline-block;
+    float:left;
+    text-indent:2em;
+    /*background:rgba(133,243,255,0.64);*/
+}
+content ul li p:nth-child(2) {
+     letter-spacing:1px;
+    text-indent:0;
+     padding:0px;
+     margin:0px;
+     width:120px;
+     display:inline-block;
+     float:right;
+     /*background:rgba(133,243,255,0.64);*/
+}
+content #down ul li {
+    padding:0px;
+}
+content #down{
+    margin:2% 2% 0% 0%;
+    width:32%;
+    height:284px;
+}
+content #down header{
+    background:#187DC1  url("../images/download.png") no-repeat 15px 47%;
+    background-size:20px 20px;
+}
+content #announcement{
+    margin-top:2%;
+    width:32%;
+    height:284px;
+}
+content #announcement header{
+    background:#187DC1  url("../images/announcement.png") no-repeat 15px 47%;
+    background-size:20px 20px;
+}
+content #friendlinks{
+    margin-top:2%;
+    width:32%;
+    height:284px;
+}
+content #friendlinks header{
+    background:#187DC1  url("../images/links.png") no-repeat 15px 47%;
+    background-size:20px 20px;
+}
+content #friendlinks li:nth-child(1){
+    /*background:rgba(247,255,97,0.64);*/
+    /*margin-top:-5px;*/
+
+}
+content #friendlinks a{
+    line-height:1.3;
+    color:#00CD75;
+}
+content #friendlinks li:hover{
+    background:#fffbfd;
+}
+content #friendlinks a:hover{
+    color:#0E88EB;
+}
+footer{
+    font-size:12px;
+    width:100%;
+    height:60px;
+    color:#666666;
+    background:#323232;
+}
+footer p:nth-child(1){
+    margin:25px 0px 0px 40px;
+}
+footer div{
+    margin:17px 0px 0px 200px;
+}
+footer p:nth-child(3){
+    margin:25px 40px 0px 0px;
+}
+footer a{
+    color:#666666;
+}
+footer a:hover{
+    color:#fff;
+}
+
+
+
+footer .footer-icons .rss {
+    background-color: #faa33d;
+    background-position: -61px -303px;
+}
+footer .footer-icons .weixin {
+    background-color: #3AB354;
+    background-position: -61px -5px;
+}
+.footer-icons .icon {
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    display: inline-block;
+    border-radius: 32px;
+}
+.icon{
+    background-image: url("../images/icon.png");
+    background-repeat: no-repeat;
+}

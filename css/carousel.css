@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    border:0;
+    text-decoration: none;
+}
+
+body {
+    /*padding: 20px;*/
+}
+
+#container {
+    position: relative;
+    width: 1200px;
+    height: 450px;
+    /*border: 3px solid #000;*/
+    overflow: hidden;
+}
+
+#list {
+    position: absolute;
+    z-index: 1;
+    width: 8450px;
+    height: 450px;
+}
+
+#list img {
+    float: left;
+    width: 1200px;
+    height: 450px;
+}
+
+#buttons {
+    position: absolute;
+    left: 550px;
+    bottom: 20px;
+    z-index: 2;
+    height: 10px;
+    width: 100px;
+}
+
+#buttons span {
+    float: left;
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+    /*border: 1px solid #fff;*/
+    border-radius: 50%;
+    background: #333;
+    cursor: pointer;
+}
+
+#buttons .on {
+    background: white;
+}
+
+.arrow {
+    position: absolute;
+    top: 180px;
+    z-index: 2;
+    display: none;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 39px;
+    text-align: center;
+    top:0px;
+    color: #fff;
+    opacity:0.6;
+    /*background-color: RGBA(0, 0, 0, .1);*/
+    cursor: pointer;
+    /*border-radius:20px;*/
+
+}
+#carousel_switch a:nth-child(1){
+    left:0px;
+    padding:210px 80px 210px 20px;
+}
+#carousel_switch a:nth-child(2) {
+    right:0px;
+    padding:210px 20px 210px 80px;
+}
+
+.arrow:hover {
+    opacity:1;
+    /*background-color: RGBA(256, 256, 256, .2);*/
+}
+
+#container:hover .arrow {
+    display: block;
+}
+
+#prev {
+    left: 20px;
+}
+
+#next {
+    right: 20px;
+}
